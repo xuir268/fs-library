@@ -30,6 +30,7 @@ public:
   [[nodiscard]] std::span<std::byte> span() noexcept;
   [[nodiscard]] std::span<const std::byte> span() const noexcept;
   [[nodiscard]] bool valid() const noexcept;
+  explicit operator bool() const noexcept { return valid(); }
 
 private:
   friend class BufferPool;

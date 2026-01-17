@@ -6,7 +6,7 @@
 
 namespace storage {
 
-constexpr std::size_t kBlockSize = 4096;
+constexpr std::size_t BLOCK_SIZE = 4096;
 
 struct Block {
   using block_id_t = std::uint64_t;
